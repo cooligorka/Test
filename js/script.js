@@ -70,3 +70,27 @@ decr--;
 
 console.log(incr);
 console.log(decr);
+
+    //Home work 1
+
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+const questionAboutMovie1 = prompt("Один из последих фильмов?", ""),
+    answerAboutMovie1 = prompt("На сколько оцените его?", ""),
+    questionAboutMovie2 = prompt("Один из последих фильмов?", ""),
+    answerAboutMovie2 = prompt("На сколько оцените его?", "");
+
+personalMovieDB.movies[questionAboutMovie1] = answerAboutMovie1;
+personalMovieDB.movies[questionAboutMovie2] = answerAboutMovie2;
+
+
+console.log(personalMovieDB);
+console.log(personalMovieDB.movies);
